@@ -126,6 +126,69 @@
         color: #333;
       }
 
+      .skills {
+        padding: 80px 40px;
+        background: #f5f5f5;
+      }
+
+      .skills h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+
+      .skills-container {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+
+      .skills-left,
+      .skills-right {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .skill {
+        margin-bottom: 20px;
+      }
+
+      .skill span {
+        font-weight: bold;
+      }
+
+      .progress {
+        background: #ddd;
+        height: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 5px;
+      }
+
+      .progress-bar {
+        height: 10px;
+        background: #00bcd4;
+        width: 0;
+        border-radius: 10px;
+        transition: width 1.5s ease-in-out;
+      }
+
+      .tools-box {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .tools-box ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .tools-box li {
+        margin-bottom: 10px;
+      }
+
       @media (max-width: 900px) {
         .hero {
           flex-direction: column;
@@ -220,6 +283,59 @@
               <p>📚 Lecture de livres</p>
               <p>🎵 Écouter de la musique</p>
               <p>✈️ Voyage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2>Mes Compétences</h2>
+
+        <div class="skills-container">
+          <!-- Compétences techniques -->
+          <div class="skills-left">
+            <div class="skill">
+              <span>HTML</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>CSS</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Java</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outils -->
+          <div class="skills-right">
+            <div class="tools-box">
+              <h3>Outils & Logiciels</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>MS Office</li>
+                <li>MS Access</li>
+                <li>MS Excel</li>
+                <li>MS PowerPoint</li>
+              </ul>
             </div>
           </div>
         </div>
