@@ -312,6 +312,61 @@
         background: #0097a7;
       }
 
+      footer {
+        background: #111;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+        gap: 20px;
+      }
+
+      footer .footer-left,
+      footer .footer-right {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      footer h3 {
+        margin-bottom: 15px;
+        color: #00bcd4;
+      }
+
+      footer p,
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      footer a:hover {
+        color: #00bcd4;
+      }
+
+      footer .socials {
+        margin-top: 15px;
+      }
+
+      footer .socials a {
+        margin: 0 10px;
+        font-size: 20px;
+      }
+
+      @media (max-width: 600px) {
+        footer .footer-container {
+          flex-direction: column;
+          text-align: center;
+        }
+      } 
+
       @media (max-width: 900px) {
         .hero {
           flex-direction: column;
@@ -552,6 +607,32 @@
           </div>
         </div>
       </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <h3>Contact</h3>
+            <p>MBOLATIANA Herilantosoa Claude Adele</p>
+            <p>+261 38 23 104 36</p>
+            <p>mbolatianaherilantosoa@gmail.com</p>
+            <p>Fianarantsoa, Madagascar</p>
+          </div>
+
+          <div class="footer-right">
+            <h3>Suivez-moi</h3>
+            <div class="socials">
+              <a href="#" target="_blank">Facebook</a>
+              <a href="#" target="_blank">LinkedIn</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top: 30px">
+          &copy; 2026 MBOLATIANA Herilantosoa Claude Adele. Tous droits
+          réservés.
+        </p>
+      </footer>
     </main>
   </body>
 </html>
