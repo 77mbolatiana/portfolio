@@ -3,258 +3,318 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MBOLATIANA Herilantosoa Claude Adele - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MBOLATIANA Herilantosoa Claude Adele — Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">Claude Adele</div>
-        <ul class="nav-links">
-          <li><a href="#home">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="loader" id="loader">
+      <div class="loader-text">CA</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header id="header">
+      <div class="logo">Claude Adele</div>
+      <button
+        id="themeToggle"
+        class="theme-toggle"
+        aria-label="Basculer le thème"
+      >
+        🌙
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-left">
-          <p>
-            MBOLATIANA Herilantosoa Claude Adele <br />
-            +261382310436 <br />
-            mbolatianaherilantosoa@gmail.com <br />
-            Fianarantsoa
+    <section class="hero" id="home">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-tag">Disponible — Fianarantsoa</div>
+          <h1 class="hero-name">Développeur<br /><em>Web & App</em></h1>
+          <p class="hero-title">
+            MBOLATIANA Herilantosoa Claude Adele &nbsp;·&nbsp; DA2I — EMIT
           </p>
-
-          <h1><span>Développeur</span> Web</h1>
-        </div>
-
-        <div class="hero-right">
-          <img src="photo.jpeg" alt="Photo de Claude Adele" />
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <h2>À propos de moi</h2>
-
-        <div class="about-container">
-          <div class="about-left">
-            <div class="about-box">
-              <h3>Informations personnelles</h3>
-              <p><strong>Nom :</strong> MBOLATIANA</p>
-              <p><strong>Prénom :</strong> Herilantosoa Claude Adele</p>
-              <p><strong>Contact :</strong> 038 23 104 36</p>
-              <p><strong>Email :</strong> mbolatianaherilantosoa@gmail.com</p>
-            </div>
-
-            <div class="about-box">
-              <h3>Langues</h3>
-              <p>Français</p>
-              <p>Anglais</p>
-              <p>Malgache</p>
-            </div>
-          </div>
-
-          <div class="about-right">
-            <div class="about-box">
-              <h3>Profil</h3>
-              <p>
-                Étudiant en 1ère année de Licence en Informatique, spécialisé en
-                Développement d’Applications Internet et Intranet (DA2I) à
-                l'École de Management et d’Innovation Technologique (EMIT) à
-                Fianarantsoa.
-              </p>
-
-              <p>
-                Passionné par la technologie et le développement web, j’aime
-                concevoir des applications modernes, performantes et intuitives.
-                Je suis motivé, curieux et toujours prêt à apprendre de
-                nouvelles technologies pour améliorer mes compétences.
-              </p>
-            </div>
-
-            <div class="about-box">
-              <h3>Centres d’intérêt</h3>
-              <p>🎬 Regarder des séries</p>
-              <p>📚 Lecture de livres</p>
-              <p>🎵 Écouter de la musique</p>
-              <p>✈️ Voyage</p>
-            </div>
+          <div class="hero-contacts">
+            <span>+261 38 23 104 36</span>
+            <span>mbolatianaherilantosoa@gmail.com</span>
+            <span>Fianarantsoa, Madagascar</span>
           </div>
         </div>
-      </section>
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <img
+              src="photo.jpeg"
+              alt="Photo de Claude Adele"
+              class="hero-photo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="skills" id="skills">
-        <h2>Mes Compétences</h2>
+    <div class="about" id="about">
+      <div class="about-inner">
+        <div class="section-header reveal">
+          <span class="section-num">01</span>
+          <h2 class="section-title">À propos</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3>Profil</h3>
+            <p>
+              Étudiant en 1ère année de Licence en Informatique, spécialisé en
+              Développement d'Applications Internet et Intranet (DA2I) à l'École
+              de Management et d'Innovation Technologique (EMIT) à Fianarantsoa.
+            </p>
+            <br />
+            <p>
+              Passionné par la technologie et le développement web, j'aime
+              concevoir des applications modernes, performantes et intuitives.
+              Je suis motivé, curieux et toujours prêt à apprendre.
+            </p>
+          </div>
+          <div class="about-card reveal" style="transition-delay: 0.1s">
+            <h3>Informations</h3>
+            <p><strong>Nom :</strong> MBOLATIANA</p>
+            <p><strong>Prénom :</strong> Herilantosoa Claude Adele</p>
+            <p><strong>Contact :</strong> 038 23 104 36</p>
+            <p><strong>Email :</strong> mbolatianaherilantosoa@gmail.com</p>
+          </div>
+          <div class="about-card reveal" style="transition-delay: 0.2s">
+            <h3>Langues</h3>
+            <p>Français — Courant</p>
+            <p>Anglais — Intermédiaire</p>
+            <p>Malgache — Langue maternelle</p>
+          </div>
+          <div class="about-card reveal" style="transition-delay: 0.3s">
+            <h3>Centres d'intérêt</h3>
+            <p>🎬 Regarder des séries</p>
+            <p>📚 Lecture de livres</p>
+            <p>🎵 Écouter de la musique</p>
+            <p>✈️ Voyages & découvertes</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="skills-container">
-          <!-- Compétences techniques -->
-          <div class="skills-left">
-            <div class="skill">
-              <span>HTML</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 90%"></div>
+    <div class="skills" id="skills">
+      <div class="skills-inner">
+        <div class="section-header reveal">
+          <span class="section-num">02</span>
+          <h2 class="section-title">Compétences</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div>
+            <div class="skill-item" data-width="90">
+              <div class="skill-header">
+                <span class="skill-name">HTML</span
+                ><span class="skill-pct">90%</span>
               </div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
             </div>
-
-            <div class="skill">
-              <span>CSS</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 85%"></div>
+            <div
+              class="skill-item"
+              data-width="85"
+              style="transition-delay: 0.1s"
+            >
+              <div class="skill-header">
+                <span class="skill-name">CSS</span
+                ><span class="skill-pct">85%</span>
               </div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
             </div>
-
-            <div class="skill">
-              <span>JavaScript</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 75%"></div>
+            <div
+              class="skill-item"
+              data-width="75"
+              style="transition-delay: 0.2s"
+            >
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span
+                ><span class="skill-pct">75%</span>
               </div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
             </div>
-
-            <div class="skill">
-              <span>Java</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 70%"></div>
+            <div
+              class="skill-item"
+              data-width="70"
+              style="transition-delay: 0.3s"
+            >
+              <div class="skill-header">
+                <span class="skill-name">Java</span
+                ><span class="skill-pct">70%</span>
               </div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
             </div>
           </div>
-
-          <!-- Outils -->
-          <div class="skills-right">
-            <div class="tools-box">
-              <h3>Outils & Logiciels</h3>
-              <ul>
-                <li>Visual Studio Code</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>MS Office</li>
-                <li>MS Access</li>
-                <li>MS Excel</li>
-                <li>MS PowerPoint</li>
-              </ul>
+          <div class="tools-panel reveal">
+            <h3>Outils & Logiciels</h3>
+            <div>
+              <span class="tool-tag">Visual Studio Code</span>
+              <span class="tool-tag">Git</span>
+              <span class="tool-tag">GitHub</span>
+              <span class="tool-tag">MS Office</span>
+              <span class="tool-tag">MS Access</span>
+              <span class="tool-tag">MS Excel</span>
+              <span class="tool-tag">MS PowerPoint</span>
+              <span class="tool-tag">MySQL</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="projects" id="projects">
-        <h2>Mes Projets</h2>
-
+    <div class="projects" id="projects">
+      <div class="projects-inner">
+        <div class="section-header reveal">
+          <span class="section-num">03</span>
+          <h2 class="section-title">Projets</h2>
+          <div class="section-line"></div>
+        </div>
         <div class="projects-grid">
-          <!-- Projet 1 : Portfolio -->
-          <div class="project-card">
-            <img src="portfolio.jpg" alt="Projet Portfolio" />
-            <div class="project-content">
-              <h3>Mon Portfolio Personnel</h3>
-              <p>
-                Site web personnel présentant mon profil, mes compétences et mes
-                projets avec un design moderne et responsive.
+          <div class="project-card reveal">
+            <div class="project-img-placeholder">
+              <img src="portfolio.png" alt="Projet 1" class="project-img" />
+            </div>
+            <div class="project-border"></div>
+            <div class="project-overlay">
+              <div class="project-cat">Portfolio</div>
+              <h3 class="project-title">Portfolio Personnel</h3>
+              <p class="project-desc">
+                Site web personnel avec design moderne, responsive et animations
+                fluides.
               </p>
-              <div class="tech">Technologies : HTML, CSS, JavaScript</div>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
             </div>
           </div>
-
-          <!-- Projet 2 : Application de Gestion des Étudiants -->
-          <div class="project-card">
-            <img src="gestion-etudiant.jpg" alt="Gestion des étudiants" />
-            <div class="project-content">
-              <h3>Application de Gestion des Étudiants</h3>
-              <p>
-                Application permettant d’ajouter, modifier et supprimer des
-                étudiants avec gestion des informations académiques.
+          <div class="project-card reveal" style="transition-delay: 0.1s">
+            <div class="project-img-placeholder">
+              <span class="pnum">02</span>
+            </div>
+            <div class="project-border"></div>
+            <div class="project-overlay">
+              <div class="project-cat">Application</div>
+              <h3 class="project-title">Gestion des Étudiants</h3>
+              <p class="project-desc">
+                Application CRUD complète pour la gestion des informations
+                académiques.
               </p>
-              <div class="tech">Technologies : Java, MySQL</div>
+              <div class="project-tech">
+                <span>Java</span><span>MySQL</span>
+              </div>
             </div>
           </div>
-
-          <!-- Projet 3 : Site E-commerce (Projet académique) -->
-          <div class="project-card">
-            <img src="ecommerce.jpg" alt="Projet E-commerce" />
-            <div class="project-content">
-              <h3>Mini Site E-commerce</h3>
-              <p>
-                Développement d’un site e-commerce avec gestion des produits,
-                catégories et panier d’achat.
+          <div class="project-card reveal" style="transition-delay: 0.2s">
+            <div class="project-img-placeholder">
+              <span class="pnum">03</span>
+            </div>
+            <div class="project-border"></div>
+            <div class="project-overlay">
+              <div class="project-cat">E-commerce</div>
+              <h3 class="project-title">Mini Site E-commerce</h3>
+              <p class="project-desc">
+                Plateforme e-commerce avec gestion des produits, catégories et
+                panier.
               </p>
-              <div class="tech">Technologies : HTML, CSS, JavaScript</div>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
             </div>
           </div>
-
-          <!-- Projet 4 : Gestion de Bibliothèque -->
-          <div class="project-card">
-            <img src="bibliotheque.jpg" alt="Gestion Bibliothèque" />
-            <div class="project-content">
-              <h3>Système de Gestion de Bibliothèque</h3>
-              <p>
-                Application permettant la gestion des livres, emprunts et
-                retours avec interface simple.
+          <div class="project-card reveal" style="transition-delay: 0.3s">
+            <div class="project-img-placeholder">
+              <span class="pnum">04</span>
+            </div>
+            <div class="project-border"></div>
+            <div class="project-overlay">
+              <div class="project-cat">Gestion</div>
+              <h3 class="project-title">Système de Bibliothèque</h3>
+              <p class="project-desc">
+                Gestion des livres, emprunts et retours avec interface
+                intuitive.
               </p>
-              <div class="tech">Technologies : Java, MS Access</div>
+              <div class="project-tech">
+                <span>Java</span><span>MS Access</span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="contact" id="contact">
-        <h2>Contact</h2>
+      </div>
+    </div>
 
-        <div class="contact-container">
-          <!-- Infos contact -->
-          <div class="contact-left">
-            <div class="contact-info">
-              <p><strong>Nom :</strong> MBOLATIANA Herilantosoa Claude Adele</p>
-              <p><strong>Téléphone :</strong> 038 23 104 36</p>
-              <p><strong>Email :</strong> mbolatianaherilantosoa@gmail.com</p>
-              <p><strong>Localisation :</strong> Fianarantsoa, Madagascar</p>
+    <div class="contact" id="contact">
+      <div class="contact-inner">
+        <div>
+          <div class="section-header reveal" style="margin-bottom: 50px">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Contact</h2>
+          </div>
+          <div class="contact-info-block reveal">
+            <div class="contact-row">
+              <div class="contact-icon">✆</div>
+              <div>
+                <div class="contact-row-label">Téléphone</div>
+                <div class="contact-row-value">038 23 104 36</div>
+              </div>
             </div>
-          </div>
-
-          <!-- Formulaire -->
-          <div class="contact-right">
-            <div class="contact-form">
-              <form>
-                <input type="text" placeholder="Votre nom" required />
-                <input type="email" placeholder="Votre email" required />
-                <textarea
-                  rows="5"
-                  placeholder="Votre message"
-                  required
-                ></textarea>
-                <button type="submit">Envoyer Message</button>
-              </form>
+            <div class="contact-row">
+              <div class="contact-icon">@</div>
+              <div>
+                <div class="contact-row-label">Email</div>
+                <div class="contact-row-value">
+                  mbolatianaherilantosoa@gmail.com
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="footer-container">
-          <div class="footer-left">
-            <h3>Contact</h3>
-            <p>MBOLATIANA Herilantosoa Claude Adele</p>
-            <p>+261 38 23 104 36</p>
-            <p>mbolatianaherilantosoa@gmail.com</p>
-            <p>Fianarantsoa, Madagascar</p>
-          </div>
-
-          <div class="footer-right">
-            <h3>Suivez-moi</h3>
-            <div class="socials">
-              <a href="#" target="_blank">Facebook</a>
-              <a href="#" target="_blank">LinkedIn</a>
-              <a href="#" target="_blank">GitHub</a>
+            <div class="contact-row">
+              <div class="contact-icon">◎</div>
+              <div>
+                <div class="contact-row-label">Localisation</div>
+                <div class="contact-row-value">Fianarantsoa, Madagascar</div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="contact-form reveal" style="transition-delay: 0.2s">
+          <div class="form-group">
+            <input type="text" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Votre email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Votre message" rows="5" required></textarea>
+          </div>
+          <button class="btn-submit"><span>Envoyer le message</span></button>
+        </div>
+      </div>
+    </div>
 
-        <p style="margin-top: 30px">
-          &copy; 2026 MBOLATIANA Herilantosoa Claude Adele. Tous droits
-          réservés.
-        </p>
-      </footer>
-    </main>
+    <footer>
+      <div class="footer-logo">Claude Adele</div>
+      <p class="footer-copy">© 2026 MBOLATIANA Herilantosoa Claude Adele</p>
+      <div class="footer-socials">
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
