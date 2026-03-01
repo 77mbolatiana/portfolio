@@ -280,6 +280,13 @@ header.scrolled {
   opacity: 0;
   animation: fadeUp 0.8s 0.7s forwards;
 }
+
+/* Style pour le numéro d'inscription */
+.reg-number {
+  color: var(--gold);
+  font-weight: 700;
+  font-style: italic;
+}
 .hero-contacts {
   display: flex;
   flex-direction: column;
